@@ -1,7 +1,7 @@
 /* ==================   hero section styles ================== */
 
 .hero {
-    background-image: url('/assets/img/design/background\ header.png');
+    background-image: url('../img/design/background\ header.png');
     width: 100%;
     overflow: hidden;
     display: flex;

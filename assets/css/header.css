@@ -62,7 +62,7 @@
 .navbar {
     flex-basis: 100%;
     display: none;
-    background-image: url('/assets/img/design/background\ header.png');
+    background-image: url('../img/design/background\ header.png');
 }
 
 .navbar .navbar__phone {
@@ -115,7 +115,7 @@
 /* change header background after scrolling */
 
 .heading--background {
-    background-image: url('/assets/img/design/background\ header.png');
+    background-image: url('../img/design/background\ header.png');
 }
 
 
