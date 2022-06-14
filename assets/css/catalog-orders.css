@@ -1,0 +1,111 @@
+/* ==================   catalog-orders burger section styles ================== */
+
+.catalog-orders {
+    background: var(--global-background-color);
+    margin-top: 70px;
+}
+
+.catalog-orders .container {
+    max-width: 1346px;
+    text-align: center;
+}
+
+.container--catalog-orders {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-orders__header {
+    text-align: center;
+    max-width: 1056px;
+    align-self: center;
+}
+
+.catalog-orders .catalog-orders__header a {
+    display: inline-block;
+    padding: 4px 23px;
+    font-size: clamp(15px, 2.5vw, 25px);
+    line-height: 38px;
+    color: #3d2514;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: var(--global-primary-font-family);
+    border: none;
+    text-decoration: none;
+    background: var(--global-color-alt);
+}
+
+.catalog-orders .catalog-orders__header h3 {
+    margin-top: 43px;
+    text-transform: uppercase;
+    color: var(--global-color-secondary);
+    font-size: clamp(30px, 2.5vw, 50px);
+    line-height: 38px;
+    font-weight: 400;
+    font-family: "Alfa Slab One";
+}
+
+.catalog-orders .catalog-orders__header p {
+    margin-top: 24px;
+    color: var(--global-color-secondary);
+    text-transform: lowercase;
+    font-size: 17px;
+    line-height: 29.17px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.catalog-orders .container .catalog-orders__grid {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.order-burger {
+    max-width: 362px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.catalog-orders .container .catalog-orders__grid .order-burger h4 {
+    margin-top: 15px;
+    font-family: var(--global-primary-font-family);
+    color: var(--global-color-secondary);
+    font-size: clamp(25px, 2.5vw, 38px);
+    line-height: 38px;
+    font-weight: 700;
+}
+
+.catalog-orders .container .catalog-orders__grid .order-burger p {
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    color: var(--global-color-secondary);
+    line-height: 21px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.order-find-btn {
+    display: inline-block;
+    font-size: 17px;
+    color: #FFFFFF;
+    padding: 4px 10px;
+    text-transform: uppercase;
+    font-family: 'Alfa Slab One';
+    border: none;
+    text-decoration: none;
+    line-height: 38px;
+    font-weight: 400;
+}
+
+.order-burger .order-find-btn {
+    margin-top: 35px;
+    padding: 10px 37px;
+}
+
+.order-find-btn--red {
+    background: var(--global-color-primary);
+}

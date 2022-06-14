@@ -1,0 +1,109 @@
+/* ==================   footering burger section styles ================== */
+
+.footering {
+    margin-bottom: 66px;
+}
+
+.footering .container {
+    max-width: 1328px;
+    background-image: url(/assets/img/images/Place\ Your\ Design\ Here\ \(Double\ Click\ to\ Edit\).PNG);
+    padding: 22px 43px;
+}
+
+.footering .footering__description-burger div {
+    margin: 0 auto;
+    max-width: min(100%, 40vw);
+}
+
+.footering .footering__description-burger p {
+    margin: 0 auto;
+    text-transform: lowercase;
+    margin-top: 38px;
+    font-size: 17px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+.address {
+    margin-top: 30px;
+    flex-basis: 50%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+.address .address__item {
+    display: flex;
+}
+
+.address .address__item span {
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.address .address__item p {
+    font-size: 15px;
+    line-height: 38px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: var(--global-primary-font-family);
+}
+
+.footering .footering__credits-socials {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.footering__credits-socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footering__credits-socials p {
+    font-weight: 400;
+    font-family: "Bebas Neue";
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+.footering__credits-socials a {
+    width: 30px;
+    height: 30px;
+    margin-left: 12px;
+}
+
+.footering__credits-socials a span {
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+
+/* ======================  MEDIA QUERIES ========================== */
+
+
+/* screen resolution greater than or equal to 768px */
+
+@media (min-width: 48rem) {
+    .footering .footering__info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 62px 0;
+    }
+    .footering .footering__description-burger {
+        max-width: clamp(50%, 2.5vw, 512px);
+    }
+}
+
+@media (min-width: 62rem) {
+    .address .address__item {
+        padding-left: 165px;
+    }
+    .address .address__item span {
+        margin-right: 34px;
+    }
+}

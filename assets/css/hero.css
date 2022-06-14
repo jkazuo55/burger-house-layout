@@ -1,0 +1,90 @@
+/* ==================   hero section styles ================== */
+
+.hero {
+    background-image: url('/assets/img/design/background\ header.png');
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.container--hero {
+    height: clamp(600px, 60vw, 825px);
+    width: 100%;
+    position: relative;
+}
+
+.hero .hero__text {
+    z-index: 999;
+    color: var(--global-color-secondary);
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.hero .hero__text h3 {
+    margin-left: 4px;
+    font-weight: 400;
+    font-size: clamp(.75rem, 3vw, 1.5rem);
+    padding: 5px 16px;
+    line-height: 33px;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: var(--global-color-secondary);
+    display: inline-block;
+}
+
+.hero .hero__text h1 {
+    display: block;
+    font-size: clamp(4rem, 8vw, 7.125rem);
+    text-shadow: 3px 0 white, 0 4px white, 0px 0 white, 0 1px white;
+    font-family: 'Alfa Slab One';
+    padding: 8px auto;
+    font-weight: 400;
+}
+
+.hero .hero__text h1 span {
+    display: block;
+    font-size: 56px;
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.hero .hero__graphic {
+    width: clamp(500px, 80vw, 100vw);
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%)
+}
+
+
+/* ======================  MEDIA QUERIES ========================== */
+
+
+/* screen resolution greater than or equal to 768px */
+
+@media (min-width: 48rem) {
+    .hero .hero__text {
+        left: 15px;
+        transform: none;
+    }
+    .hero .container--hero .hero__graphic {
+        left: 75%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+/* screen resolution greater than or equal to 1400px */
+
+@media (min-width: 87.5rem) {
+    .hero .container--hero .hero__graphic {
+        top: -200px;
+        left: clamp(200px, 35%, 440px);
+        transform: none;
+    }
+}

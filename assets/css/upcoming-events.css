@@ -1,0 +1,103 @@
+/* ==================   upcoming-events burger section styles ================== */
+
+.upcoming-events {
+    margin-top: 130px;
+    background: var(--global-background-color);
+}
+
+.upcoming-events .container {
+    max-width: 1325px;
+}
+
+.upcoming-event {
+    box-shadow: 19px 25px 43px 0px rgba(0, 0, 0, 0.17);
+    text-align: start;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 25px;
+}
+
+.title-section {
+    font-size: 29px;
+    font-family: var(--global-primary-font-family);
+    color: #3d3d3d;
+    letter-spacing: 2px;
+    line-height: 46px;
+    font-weight: 700;
+}
+
+.title-section span {
+    display: block;
+    color: #3d2514;
+    text-transform: uppercase;
+    font-size: clamp(30px, 2.5vw, 42px);
+    line-height: 28px;
+    font-weight: 400;
+    font-family: "Alfa Slab One";
+    letter-spacing: normal;
+}
+
+.upcoming-event .upcoming-event__info {
+    max-width: 507px;
+    padding-left: 32px;
+}
+
+.upcoming-event .upcoming-event__info p {
+    margin-top: 40px;
+    font-family: 'Montserrat';
+    font-size: 21px;
+    text-align: left;
+    color: #3d3d3d;
+    font-size: 21px;
+    line-height: 33px;
+    font-weight: 400;
+}
+
+.upcoming-event .upcoming-event__info .upcoming-event__slider {
+    margin-top: 50px;
+    display: flex;
+    height: 18px;
+    width: 68px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.upcoming-event .upcoming-event__info .upcoming-event__slider a {
+    width: 18px;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+}
+
+.upcoming-event .upcoming-event__info .upcoming-event__slider .enabled {
+    background-color: var(--global-color-alt);
+}
+
+.upcoming-event .upcoming-event__info .upcoming-event__slider .disabled {
+    background-color: #dcdcdc;
+}
+
+.upcoming-event__graphic {
+    max-width: 660px;
+}
+
+
+/* ======================  MEDIA QUERIES ========================== */
+
+
+/* screen resolution greater than or equal to 768px */
+
+@media (min-width: 48rem) {
+    .upcoming-event {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .upcoming-event .upcoming-event__info {
+        flex-basis: 40%;
+    }
+    .upcoming-event .upcoming-event__graphic {
+        flex-basis: 60%;
+    }
+}
